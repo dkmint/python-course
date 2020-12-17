@@ -1,0 +1,6 @@
+plt.figure(figsize = (12, 8))
+ax = plt.axes(projection = ccrs.PlateCarree())
+ax.coastlines()
+ax.set_extent([-125, -75, 25, 50])
+ax.gridlines(draw_labels = True)
+plt.show()
