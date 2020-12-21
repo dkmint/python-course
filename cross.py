@@ -1,0 +1,5 @@
+v = np.array([[0, 2, 0]])
+w = np.array([[3, 0, 0]])
+print(v)
+print(w)
+print(np.cross(v, w))
