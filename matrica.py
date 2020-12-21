@@ -1,0 +1,6 @@
+P = np.array([[1, 7], [2, 3], [5, 0]])
+Q = np.array([[2, 6, 3, 1], [1, 2, 3, 4]])
+print(P)
+print(Q)
+print(np.dot(P, Q))
+# np.dot(Q, P)
