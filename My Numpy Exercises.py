@@ -28,6 +28,9 @@ arr5 = np.zeros(10)
 arr5[:]=5
 arr5
 
+# Another way doing this
+# np.ones(10) * 5
+
 
 # In[6]:
 
@@ -50,6 +53,9 @@ arr_1d = np.arange(0,9)
 arr_2d = arr_1d.reshape(3,3)
 arr_2d
 
+# Another way doing this
+# np.arange(9).reshape(3,3)
+
 
 # In[9]:
 
@@ -63,33 +69,20 @@ arreye
 
 np.random.rand()
 
+# Another way doing this
+# np.random.rand(1)
+
 
 # In[11]:
 
 
-np.random.randn(26)
+np.random.randn(25)
 
 
-# In[32]:
+# In[119]:
 
 
-arr2d = np.zeros((10,10))
-arr_length = arr2d.shape[1]
-#Set up array
-
-for i in range(arr_length):
-#     arr2d[i] = i + 1/100
-    for j in range(arr_length):
-        arr2d[j] = j + 1/100
-    
-# arr2d
-
-
-# In[77]:
-
-
-arr2d = np.linspace(0,1,100).reshape(10,10)
-arr2d[1:]
+np.arange(1,101).reshape(10,10) / 100
 
 
 # In[70]:
@@ -171,6 +164,9 @@ mat[:3, 1:2]
 
 mat[4:]
 
+# Another way doing this
+# mat[4:,]
+
 
 # In[112]:
 
@@ -183,10 +179,13 @@ mat[4:]
 #        [21, 22, 23, 24, 25]])
 
 
-# In[113]:
+# In[120]:
 
 
 mat[3:]
+
+# Another way doing this
+# may[3:5,:]
 
 
 # In[114]:
@@ -205,6 +204,9 @@ mat.std()
 
 
 np.sum(mat, axis = 0)
+
+# Another way doing this
+# mat.sum(axis = 0)
 
 
 # In[ ]:
