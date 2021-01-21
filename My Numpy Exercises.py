@@ -189,6 +189,24 @@ mat[4:]
 mat[3:]
 
 
+# In[114]:
+
+
+mat.sum()
+
+
+# In[115]:
+
+
+mat.std()
+
+
+# In[116]:
+
+
+np.sum(mat, axis = 0)
+
+
 # In[ ]:
 
 
